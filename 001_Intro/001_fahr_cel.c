@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Excercise 1.3: Modify the temperature conversion function to print a heading above the table.
+// Excercise 1.3: Modify the temperature conversion function to print a heading
+// above the table.
 
 // void
 // main()
@@ -23,13 +24,10 @@
 // }
 // }
 
+// Excercise 1.4: Write a program to print the corresponding celsius to
+// Fahrenhiet table
 
-
-// Excercise 1.4: Write a program to print the corresponding celsius to Fahrenhiet table
-
-void
-main()
-{
+void main() {
   float fahr, celsius;
   float lower, upper, step;
 
@@ -40,11 +38,10 @@ main()
 
   celsius = lower;
 
-  while (celsius <= upper){
+  while (celsius <= upper) {
 
-  fahr = (9.0/5.0) * (celsius + 32);
-  printf("%3.0f %6.1f\n", celsius, fahr);
-  celsius = celsius + step;
+    fahr = (9.0 / 5.0) * (celsius + 32);
+    printf("%3.0f %6.1f\n", celsius, fahr);
+    celsius = celsius + step;
+  }
 }
-}
-
